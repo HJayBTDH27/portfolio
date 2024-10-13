@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=""en>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport"
@@ -17,6 +17,35 @@
         <!-- Page Container -->
         <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
+            <!-- Header and Nav-bar -->
+            <div class="w3-container">
+                <div class="w3-container w3-white w3-text-teal">
+                    <h1 class="w3-wide w3-sans-serif" style="text-shadow:1px 1px 0 #444"><b>Hugh Jay</b></h1>
+                </div> 
+                <div class="w3-bar w3-teal w3-border w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button">Home</a>
+                    <a href="C:\Users\hughe\Documents\Algonquin\TERM_3\CST3106 Internet arch and Web Dev\Assignments\Portfolio\resumeV2.html" class="w3-bar-item w3-button w3-hide-small" target="content_display_frame">CV</a>
+                    <a href="#" class="w3-bar-item w3-button w3-hide-small" target="content_display_frame">Yatzy</a>
+                    <a href="#" class="w3-bar-item w3-button w3-hide-small" target="content_display_frame">Triage</a>
+                    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-border w3-card-4" onclick="myFunction()">&#9781;</a>
+                </div>
+                
+                <div id="demo" class="w3-bar-block w3-teal w3-hide w3-hide-large w3-hide-medium w3-border w3-card-4">
+                    <a href="C:\Users\hughe\Documents\Algonquin\TERM_3\CST3106 Internet arch and Web Dev\Assignments\Portfolio\resumeV2.html" class="w3-bar-item w3-button" target="content_display_frame">CV</a>
+                    <a href="#" class="w3-bar-item w3-button" target="content_display_frame">Yatzy</a>
+                    <a href="#" class="w3-bar-item w3-button" target="content_display_frame">Triage</a>
+                </div>
+                <script>
+                    function myFunction() {
+                    var x = document.getElementById("demo");
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                    } else { 
+                        x.className = x.className.replace(" w3-show", "");
+                    }
+                    }
+                </script>
+            </div>
             <!-- The Grid -->
             <div class="w3-row-padding">
             
@@ -24,17 +53,13 @@
             <div class="w3-third">
             
                 <div class="w3-white w3-text-grey w3-card-4">
-                    <div class="w3-display-container">
+                    <!-- <div class="w3-display-container">
                         <img src="man_with_bowtie.jpg" style="width:100%" alt="Avatar">
-                        <div class="w3-display-bottomleft w3-container w3-text-black">
-                            <h2>Hugh Jay</h2>
-                        </div>
-                    </div>
+                    </div> -->
                     <div class="w3-container">
                         <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Student: BTech Digital Health</p>
                         <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Ottawa, ON, CA</p>
                         <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>jay00007@algonquinlive.com</p>
-                        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>613-400-3424</p>
                         <hr>
               
                         <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Programming Skills</b></p>
@@ -82,7 +107,15 @@
                     </div>
                 </div><br>
             </div>
-            <!-- Right Column -->
+            <!-- right column -->
+            <div class="w3-twothird">
+                <div class="w3-card-4" style="height:100vh;">
+                    <iframe src="demo_iframe.htm" style="border:none; height:100vh; width:100%;" name="content_display_frame" title="Selected Content"></iframe> 
+                </div>
+            <!-- End Right Column -->
+            </div>
+
+            <!-- Right Column
             <div class="w3-twothird">
             
                 <div class="w3-container w3-card w3-white w3-margin-bottom">
@@ -205,8 +238,8 @@
                         <p>Bachelor Degree</p><br>
                     </div>
                 </div>
-            <!-- End Right Column -->
-            </div>
+            End Right Column
+            </div> -->
 
             <!-- End Grid -->
             </div>
